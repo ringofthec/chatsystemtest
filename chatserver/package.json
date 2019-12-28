@@ -1,0 +1,12 @@
+{
+    "name": "chatrooms",
+    "version": "0.0.1",
+    "description": "test chat room",
+    "dependencies": {
+        "log4js": "^6.1.0",
+        "ws": "^7.2.1"
+    },
+    "devDependencies": {
+        "ava": "^2.4.0",
+    }
+}
