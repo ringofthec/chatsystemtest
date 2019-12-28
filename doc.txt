@@ -59,8 +59,10 @@
     5. 目前使用的通信方式是json，直观简单易懂，如果考虑带宽问题，可以使用protbuf等更紧凑的格式。
     6. 本来想要引入log4js，因为时间缘故没有引入，log4js在日志的输出和维护上更加工业化。
     7. 单元测试，因为不怎么熟悉，所以没有实现。
+    8. 现在更流行的服务器架构，前端会有connector或者gate或者link这样的专门管理和客户端连接的服务器，后面的功能服务器会隐藏在这些连接服务器背后提供服务，这些也是项目规模变大后必须考虑的。
     
 五. 程序运行说明
-    1. chatserver目录下，执行一次npm install，然后就可以用node app.js启动服务器
-    2. chatclient目录下，执行node index.js即可开始聊天，聊天前会先询问登陆的username，以及要登陆的房间id，只有同一房间id的用户，才会看到彼此的聊天信息
-    3. 开始聊天后，可以用/help 查看支持的命令
+    1. chatserver目录下，然后就可以用node app.js或者 start_server 脚本启动服务器（注：第一次运行前，先执行install脚本）
+    2. chatclient目录下，执行node index.js 或者 start_client 即可开始聊天，（注：第一次运行前，先执行install脚本）
+    3. 聊天前会先询问登陆的username，以及要登陆的房间id，只有同一房间id的用户，才会看到彼此的聊天信息
+    4. 开始聊天后，可以用/help 查看支持的命令
